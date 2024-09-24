@@ -7,6 +7,7 @@ const Whiteboard: React.FC = () => {
   const isDrawing = useRef(false); // Ref to track drawing state
 
   useEffect(() => {
+    console.log("Latest");
     const canvas = canvasRef.current;
     if (!canvas) return;
 
