@@ -4,9 +4,10 @@ const { Server } = require("socket.io"); // A library that provides WebSocket fu
 
 const app = express();
 const server = http.createServer(app);
+
 const io = new Server(server, {
   cors: {
-    origin: "http://localhost:3001",
+    origin: process.env.CORS_ORIGIN,
     methods: ["GET", "POST"],
     allowedHeaders: ["Content-Type"],
     credentials: true,
