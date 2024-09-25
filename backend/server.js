@@ -19,7 +19,10 @@ const server = http.createServer(app);
 
 app.use(
   cors({
-    origin: process.env.CLIENT_URL,
+    origin: [
+      process.env.CLIENT_URL,
+      "https://realtime-whiteboard-l4cw.onrender.com",
+    ],
     methods: ["GET", "POST"],
     credentials: true,
   })
