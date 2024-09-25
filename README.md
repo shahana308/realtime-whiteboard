@@ -1,54 +1,93 @@
-<<<<<<< HEAD
+# Realtime Whiteboard
 
-# realtime-whiteboard
+A collaborative whiteboard application that allows users to draw and share in real-time.
 
-=======
+## Table of Contents
 
-# Getting Started with Create React App
+- [Features](#features)
+- [Technologies Used](#technologies-used)
+- [Getting Started](#getting-started)
+- [Frontend Deployment](#frontend-deployment)
+- [Backend Deployment](#backend-deployment)
+- [Running Locally](#running-locally)
+- [Testing](#testing)
+- [Contributing](#contributing)
+- [License](#license)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Features
 
-## Available Scripts
+- Real-time drawing and collaboration
+- User-friendly interface
+- Responsive design for desktop and mobile
+- Socket.IO for real-time communication
 
-In the project directory, you can run:
+## Technologies Used
 
-### `npm start`
+- **Frontend:**
+- React
+- Vercel for deployment
+- Socket.IO for real-time communication
+- @testing-library/react for testing
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+- **Backend:**
+- Node.js with Express
+- Socket.IO for real-time communication
+- Render for deployment
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## Getting Started
 
-### `npm test`
+To get a local copy up and running, follow these steps.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Prerequisites
 
-### `npm run build`
+- Node.js installed on your machine
+- npm or yarn for package management
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Installation
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+1. Clone the repository:
+   git clone https://github.com/shahana308/realtime-whiteboard.git
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+1. Navigate to the project directory:
+   cd realtime-whiteboard
 
-### `npm run eject`
+1. Install dependencies for both frontend and backend:
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+   - For frontend:
+     cd frontend
+     npm install
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+   - For backend:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+     cd backend
+     npm install
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+## Frontend Deployment
 
-## Learn More
+The frontend is deployed on Vercel and can be accessed at:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- <https://realtime-whiteboard-zmfs.vercel.app/>
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Backend Deployment
 
-> > > > > > > 7c4c540b (Initialize project using Create React App)
+The backend is deployed on Render and can be accessed at:
+
+- <https://realtime-whiteboard-l4cw.onrender.com/>
+
+## Running Locally
+
+To run the application locally:
+
+1.  Start the backend server:
+
+    cd backend
+    node index.js
+
+    Ensure the server is running on port `4000`.
+
+2.  Start the frontend application:
+
+    cd frontend
+    npm start
+
+    The frontend will typically run on `http://localhost:3000`.
