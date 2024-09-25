@@ -59,8 +59,8 @@ To get a local copy up and running, follow these steps.
 
 - For backend:
 
-  cd backend
-  npm install
+       cd backend
+       npm install
 
 ## Frontend Deployment
 
@@ -81,7 +81,6 @@ To run the application locally:
 1. Start the backend server:
 
    cd backend
-
    node index.js
 
 Ensure the server is running on port `4000`.
@@ -89,7 +88,6 @@ Ensure the server is running on port `4000`.
 2. Start the frontend application:
 
    cd frontend
-
    npm start
 
 The frontend will typically run on `http://localhost:3000`.
